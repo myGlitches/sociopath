@@ -8,7 +8,8 @@ function Login({ setIsAuth }) {
   // Login Function
   const signInWithGoogle = () => {
     signInWithPopup(auth, provider).then((result) => {
-      localStorage.setItem("isAuth", true);
+      console.log(result);
+      localStorage.setItem("isAuth", "true");
       setIsAuth(true);
       navigate("/");
       // const data = result;
