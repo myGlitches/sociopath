@@ -14,7 +14,8 @@ function App() {
     signOut(auth).then(() => {
       localStorage.clear();
       setIsAuth(false);
-      window.location.pathname = "/login";
+      console.log();
+      window.location.pathname = "/";
     });
   };
 
